@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 25px;
+  background-color: #f8f8f8;
+}
+
+header {
+  border-bottom: 1px solid black;
+}
+
+h1 {
+  font-weight: bold;
+  color: #000;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.pet-image-container {
+  padding: 10px;
+}
+
+.pet-image {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.dashboard {
+  padding: 20px;
+}
+
+.dashboard>div {
+  margin-bottom: 12px;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-container button {
+  padding: 12px 18px;
+  font-size: 15px;
+  background-color: #1e2835;
+  color: #fafafa;
+  border: 1px solid #404853;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #404853;
+}
+
+
+/* Gucci's reaction message */
+.pet-message {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff0f5;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Highlight buttons when hovering */
+.button-container button:hover {
+  background-color: #52677f;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+
+/* Gucci's bouncing animation for Treat and Play */
+@keyframes gucciBounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-25px);
+  }
+
+  60% {
+    transform: translateY(0);
+  }
+
+  80% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Gucci's shaking animation for Exercise */
+@keyframes gucciShake {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Gucci's sleepy animation */
+@keyframes gucciSleep {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* Treat and Play: bounce once */
+.bounce {
+  animation: gucciBounce 0.7s ease 1;
+}
+
+/* Exercise: shake once */
+.shake {
+  animation: gucciShake 0.6s ease 1;
+}
+
+/* Sleep: breathe twice, then stop */
+.sleep-animation {
+  animation: gucciSleep 1.5s ease-in-out 2;
+}
