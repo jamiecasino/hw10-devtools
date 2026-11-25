@@ -187,3 +187,26 @@ $(function () {
   );
 
 });
+
+// HW10 - Part 2.2: Browser-Logged Messages
+
+// 404 Network Error
+var missingImage = new Image();
+missingImage.src = "images/gucci-missing.jpeg";
+
+// TypeError
+setTimeout(function () {
+  var missingPet = null;
+  console.log(missingPet.name);
+}, 1000);
+
+// Performance Violation
+$(function () {
+  $('.treat-button').on('click', function () {
+    var start = performance.now();
+
+    while (performance.now() - start < 250) {
+      // Intentional delay for debugging demonstration
+    }
+  });
+});
