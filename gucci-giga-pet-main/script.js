@@ -154,3 +154,36 @@ function animateGucci(animationClass) {
   // Play the selected animation
   petImage.addClass(animationClass);
 }
+
+// HW10 - Chrome DevTools
+// Part 2.1: Console Message Logging
+
+$(function () {
+
+  // 1. Log Info
+  console.info("Gucci Giga Pet game has loaded successfully.");
+
+  // 2. Log Warning
+  console.warn("Gucci needs more energy!");
+
+  // 3. Log Error
+  console.error("Demo error: Unable to load Gucci's activity.");
+
+  // 4. Log Table
+  console.table([pet_info]);
+
+  // 5. Log Group
+  console.group("Gucci's Pet Information");
+  console.log("Name:", pet_info.name);
+  console.log("Weight:", pet_info.weight);
+  console.log("Happiness:", pet_info.happiness);
+  console.log("Energy:", pet_info.energy);
+  console.groupEnd();
+
+  // 6. Log Custom
+  console.log(
+    "%cWelcome to Gucci Giga Pet!",
+    "color: purple; font-size: 20px; font-weight: bold;"
+  );
+
+});
