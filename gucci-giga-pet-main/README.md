@@ -5,7 +5,7 @@ Gucci Giga Pet is an interactive virtual pet game featuring my French Bulldog, G
 
 ## Live Website
 
-**https://jamiecasino.github.io/gucci-giga-pet/**
+**https://jamiecasino.github.io/hw10-devtools/gucci-giga-pet-main/**
 
 ## Features
 - **Treat:** Increases Gucci's weight and happiness.
