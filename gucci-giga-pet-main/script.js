@@ -24,7 +24,7 @@ var pet_info = {
 function clickedTreatButton() {
   // Treats increase Gucci's happiness and weight
   pet_info.happiness += 10;
-  pet_info.weight -= 1;
+  pet_info.weight += 1;
 
   // Change Gucci's picture to him eating
   $('.pet-image').attr('src', 'images/gucci-treat.jpeg');
